@@ -14256,7 +14256,22 @@ a.anchor-link {
     </script>
     <!-- End of mathjax configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Assignment 03</p>
+<p>Index : 190356E</p>
+<p>Name : N.D.Liyanage</p>
+<p>Github : <a href="https://github.com/NaduniDamsariLiyanage/en_2550">https://github.com/NaduniDamsariLiyanage/en_2550</a></p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Connected Component Analysis</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
@@ -14420,6 +14435,12 @@ Threshold for conveyor = 20.0
 
 </div>
 
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Connected components analysis for Hexnut template</p>
+
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -14471,6 +14492,69 @@ Centroids:
 
 </div>
 
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Connected components analysis for Squarenut template</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">connectivity</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">sqr_num_labels</span><span class="p">,</span><span class="n">sqr_labels</span><span class="p">,</span><span class="n">sqr_stat</span><span class="p">,</span><span class="n">sqr_cent</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">connectedComponentsWithStats</span><span class="p">(</span><span class="n">squarenut_bin</span><span class="p">,</span> <span class="n">connectivity</span><span class="p">,</span> <span class="n">cv</span><span class="o">.</span><span class="n">CV_32S</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;There are </span><span class="si">{}</span><span class="s1"> connected components in Squarenut template.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sqr_num_labels</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Statistics:&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sqr_stat</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Centroids:&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sqr_cent</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>There are 3 connected components in Squarenut template.
+Statistics:
+[[  24   24   72   72 3223]
+ [   0    0  120  120 9216]
+ [  35   35   51   51 1961]]
+
+Centroids:
+[[59.19578033 59.19578033]
+ [59.5        59.5       ]
+ [60.         60.        ]]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Connected components analysis for Conveyor belt</p>
+
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -14528,6 +14612,12 @@ Centroids:
 
 </div>
 
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Contour analysis</p>
+
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -14584,6 +14674,12 @@ Centroids:
 
 </div>
 
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Detecting Objects on a Synthetic Conveyor</p>
+
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -14640,15 +14736,19 @@ Centroids:
 
 </div>
 
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Count the number of matching hexagonal nuts</p>
+
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Count the number of matching hexagonal nuts in conveyor_f100.png</span>
-
-<span class="n">total_matches</span><span class="o">=</span><span class="mi">0</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">total_matches</span><span class="o">=</span><span class="mi">0</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">contours</span><span class="p">)):</span>
     <span class="n">ret</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">matchShapes</span><span class="p">(</span><span class="n">contours</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">contours</span><span class="p">[</span><span class="mi">7</span><span class="p">],</span><span class="mi">1</span><span class="p">,</span><span class="mf">0.0</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">ret</span><span class="o">==</span><span class="mf">0.0</span><span class="p">:</span>
@@ -14682,19 +14782,25 @@ Centroids:
 
 </div>
 
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Detecting Objects on a Synthetic Conveyor and counting hexagonal nuts</p>
+
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">total_nuts</span><span class="o">=</span><span class="mi">0</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nuts_total</span><span class="o">=</span><span class="mi">0</span>
 <span class="n">frame_count</span><span class="o">=</span><span class="mi">0</span>
 <span class="n">detected</span><span class="o">=</span><span class="p">[]</span>
 <span class="k">for</span> <span class="n">frm</span> <span class="ow">in</span> <span class="n">frames</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
     <span class="n">frame_total</span><span class="o">=</span><span class="mi">0</span>
-    <span class="n">img_gray</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">frm</span><span class="p">,</span><span class="n">cv</span><span class="o">.</span><span class="n">COLOR_BGR2GRAY</span><span class="p">)</span>
-    <span class="n">ret_f</span><span class="p">,</span><span class="n">thresh</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">threshold</span><span class="p">(</span><span class="n">img_gray</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="n">cv</span><span class="o">.</span><span class="n">THRESH_BINARY</span><span class="o">+</span><span class="n">cv</span><span class="o">.</span><span class="n">THRESH_OTSU</span><span class="p">)</span>
+    <span class="n">image_gray</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">frm</span><span class="p">,</span><span class="n">cv</span><span class="o">.</span><span class="n">COLOR_BGR2GRAY</span><span class="p">)</span>
+    <span class="n">ret_f</span><span class="p">,</span><span class="n">thresh</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">threshold</span><span class="p">(</span><span class="n">image_gray</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="n">cv</span><span class="o">.</span><span class="n">THRESH_BINARY</span><span class="o">+</span><span class="n">cv</span><span class="o">.</span><span class="n">THRESH_OTSU</span><span class="p">)</span>
     <span class="n">contours_frame</span><span class="p">,</span><span class="n">hierarchy_frame</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">findContours</span><span class="p">(</span><span class="n">thresh</span><span class="p">,</span><span class="n">cv</span><span class="o">.</span><span class="n">RETR_TREE</span><span class="p">,</span> <span class="n">cv</span><span class="o">.</span><span class="n">CHAIN_APPROX_SIMPLE</span><span class="p">)</span>
 
     <span class="k">for</span> <span class="n">cnt</span> <span class="ow">in</span> <span class="n">contours_frame</span><span class="p">:</span>
@@ -14706,13 +14812,13 @@ Centroids:
                     <span class="n">temp</span><span class="o">=</span><span class="mi">1</span>
             <span class="k">if</span> <span class="n">temp</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
                 <span class="n">detected</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cnt</span><span class="p">)</span>
-                <span class="n">total_nuts</span><span class="o">+=</span><span class="mi">1</span>
+                <span class="n">nuts_total</span><span class="o">+=</span><span class="mi">1</span>
             <span class="n">frame_total</span><span class="o">+=</span><span class="mi">1</span>
     
     
     <span class="n">frame_count</span><span class="o">+=</span><span class="mi">1</span>
     <span class="n">in_text</span><span class="o">=</span> <span class="s1">&#39;In frame : &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">frame_total</span><span class="p">)</span>
-    <span class="n">upto_text</span><span class="o">=</span><span class="s1">&#39;Upto frame : &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">total_nuts</span><span class="p">)</span>
+    <span class="n">upto_text</span><span class="o">=</span><span class="s1">&#39;Upto frame : &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">nuts_total</span><span class="p">)</span>
     <span class="n">cv</span><span class="o">.</span><span class="n">putText</span><span class="p">(</span><span class="n">img</span><span class="o">=</span><span class="n">frm</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="n">in_text</span><span class="p">,</span> <span class="n">org</span><span class="o">=</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">70</span><span class="p">),</span> <span class="n">fontFace</span><span class="o">=</span><span class="n">cv</span><span class="o">.</span><span class="n">FONT_HERSHEY_TRIPLEX</span><span class="p">,</span> <span class="n">fontScale</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span><span class="n">thickness</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
     <span class="n">cv</span><span class="o">.</span><span class="n">putText</span><span class="p">(</span><span class="n">img</span><span class="o">=</span><span class="n">frm</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="n">upto_text</span><span class="p">,</span> <span class="n">org</span><span class="o">=</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">150</span><span class="p">),</span> <span class="n">fontFace</span><span class="o">=</span><span class="n">cv</span><span class="o">.</span><span class="n">FONT_HERSHEY_TRIPLEX</span><span class="p">,</span> <span class="n">fontScale</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span><span class="n">thickness</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
